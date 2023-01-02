@@ -44,3 +44,11 @@ variable "elbeanstalk_solution_stack" {
     type = string
     default = "64bit Amazon Linux 2018.03 v3.3.6 running Tomcat 8.5 Java 8"
 }
+
+variable "aws_access_key" {
+  default = "AKIAUDRXJPCXILKLQ45W"
+}
+
+variable "aws_secret_key" {
+  default = "xI793ljZLKMwa+OuKrZmze6s8dC7nNCRtmzHNxjT"
+}
