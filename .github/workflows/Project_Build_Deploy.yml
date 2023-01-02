@@ -30,4 +30,4 @@ jobs:
         environment_name: miranapp-env
         version_label: ${{github.SHA}}
         region: ap-south-1
-        deployment_package: target/spring-petclinic-rest-2.2.5.jar
+        deployment_package: target/spring-miran-demo-application-rest-2.2.5.jar
