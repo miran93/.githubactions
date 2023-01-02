@@ -34,7 +34,7 @@ jobs:
 
     # Generates an execution plan for Terraform
     - name: Terraform Plan
-      run: terraform plan -var 'name=value' -input=false
+      run: terraform plan -out=ELBS -input=false
    
     #Save state plan for Terraform   
     - name: Save state
