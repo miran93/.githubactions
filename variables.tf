@@ -42,7 +42,7 @@ variable "elbeanstalk_app-environment" {
 }
 variable "elbeanstalk_solution_stack" {
     type = string
-    default = "64bit Amazon Linux 2018.03 v3.3.6 running Tomcat 8.5 Java 8"
+    default = "64bit Amazon Linux 2 v3.4.3 running Corretto 11" 
 }
 
 variable "aws_access_key" {
@@ -51,4 +51,19 @@ variable "aws_access_key" {
 
 variable "aws_secret_key" {
   default = "xI793ljZLKMwa+OuKrZmze6s8dC7nNCRtmzHNxjT"
+}
+
+variable "InstanceProfileNamespace" {
+  type = string
+  default = "aws:autoscaling:launchconfiguration"
+}
+
+variable "InstanceProfileName" {
+  type = string
+  default = "IamInstanceProfile"
+}
+
+variable "EC2-Role" {
+  type = string
+  default = "aws-elasticbeanstalk-ec2-role"
 }
