@@ -15,4 +15,7 @@ module "ElasticBeanstalk" {
     elbeanstalk_app-environment = var.elbeanstalk_app-environment
     vpc_id = module.network.vpc_id
     subnet = module.network.subnet_id
+    InstanceProfileNamespace = var.InstanceProfileNamespace
+    InstanceProfileName = var.InstanceProfileName
+    EC2-Role = var.EC2-Role
 }
