@@ -24,3 +24,15 @@ variable "vpc_id" {
   type        = string
   default     = null
 }
+
+variable "InstanceProfileNamespace" {
+  type = string
+}
+
+variable "InstanceProfileName" {
+  type = string
+}
+
+variable "EC2-Role" {
+  type = string
+}
