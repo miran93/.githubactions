@@ -29,4 +29,9 @@ resource "aws_elastic_beanstalk_environment" "tfenvtest" {
     name = "AssociatePublicIpAddress"
     value = true
   }
+setting {
+    namespace = var.InstanceProfileNamespace
+    name      = var.InstanceProfileName
+    value     = var.EC2-Role
+  }
 }
