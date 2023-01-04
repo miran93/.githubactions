@@ -45,14 +45,6 @@ variable "elbeanstalk_solution_stack" {
     default = "64bit Amazon Linux 2 v3.4.3 running Corretto 11" 
 }
 
-variable "aws_access_key" {
-  default = "AKIAUDRXJPCXILKLQ45W"
-}
-
-variable "aws_secret_key" {
-  default = "xI793ljZLKMwa+OuKrZmze6s8dC7nNCRtmzHNxjT"
-}
-
 variable "InstanceProfileNamespace" {
   type = string
   default = "aws:autoscaling:launchconfiguration"
